@@ -259,4 +259,4 @@ if __name__ == '__main__':
 
     lcd.clear()
     #lcd.message("  Adafruit 16x2\n  Standard LCD")
-    lcd.message(" I am a test   \n FUCK YEAH    ")
+    lcd.message(" I am a test   \n LINE TWO     ")
