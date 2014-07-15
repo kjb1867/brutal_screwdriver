@@ -1,0 +1,26 @@
+#begin
+#  prog = irexec
+#  button = KEY_MUTE
+#  config = /root/brutal_screwdriver/scripts/dd-wrt/kill_openvpn.sh
+#end
+
+begin
+  prog = irexec
+  button = KEY_NEXT
+  delay = 3
+  config = /opt/brutal_screwdriver/scripts/dd-wrt/start_openvpn.sh
+end
+
+begin
+  prog = irexec
+  button = KEY_PREVIOUS
+  delay = 3
+  config = /opt/brutal_screwdriver/scripts/dd-wrt/restart_openvpn.sh
+end
+
+begin
+  prog = irexec
+  button = KEY_POWER
+  delay = 3
+  config = /opt/brutal_screwdriver/scripts/dd-wrt/kill_openvpn.sh
+end
