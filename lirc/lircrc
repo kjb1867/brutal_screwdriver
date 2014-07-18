@@ -1,8 +1,9 @@
-#begin
-#  prog = irexec
-#  button = KEY_MUTE
-#  config = /root/brutal_screwdriver/scripts/dd-wrt/kill_openvpn.sh
-#end
+begin
+  prog = irexec
+  button = KEY_MODE
+  delay = 3
+  config = /opt/brutal_screwdriver/scripts/dd-wrt/clear_lcd.sh
+end
 
 begin
   prog = irexec
@@ -23,4 +24,32 @@ begin
   button = KEY_POWER
   delay = 3
   config = /opt/brutal_screwdriver/scripts/dd-wrt/kill_openvpn.sh
+end
+
+begin
+  prog = irexec
+  button = KEY_THREE
+  delay = 3
+  config = /opt/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "nl"
+end
+
+begin
+  prog = irexec
+  button = KEY_ONE
+  delay = 3
+  config = /opt/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "ca-toronto"
+end
+
+begin
+  prog = irexec
+  button = KEY_TWO
+  delay = 3
+  config = /opt/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "uk-london"
+end
+
+begin
+  prog = irexec
+  button = KEY_MUTE
+  delay = 3
+  config = /opt/brutal_screwdriver/scripts/dd-wrt/status_openvpn.sh
 end
