@@ -1,6 +1,6 @@
 #!/bin/bash
 source $(dirname $0)/../../config/wrench.conf
-$(dirname $0)/../lcd/print_message.py "Running Command:" "Restarting VPN"
+$(dirname $0)/../lcd/print_message.py "Running Command:" "VPN STATUS"
 wget -q --tries=10 --timeout=20 -O - http://google.com > /dev/null
 if [[ $? -eq 0 ]]; then
         country=$(whois $(curl ifconfig.me) | awk 'tolower($1) ~ /^country:/ { $
