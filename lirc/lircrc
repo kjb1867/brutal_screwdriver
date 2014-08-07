@@ -1,55 +1,105 @@
 begin
   prog = irexec
-  button = KEY_MODE
-  delay = 3
-  config = /opt/brutal_screwdriver/scripts/dd-wrt/clear_lcd.sh
-end
-
-begin
-  prog = irexec
-  button = KEY_NEXT
-  delay = 3
-  config = /opt/brutal_screwdriver/scripts/dd-wrt/start_openvpn.sh
-end
-
-begin
-  prog = irexec
-  button = KEY_PREVIOUS
-  delay = 3
-  config = /opt/brutal_screwdriver/scripts/dd-wrt/restart_openvpn.sh
-end
-
-begin
-  prog = irexec
   button = KEY_POWER
   delay = 3
-  config = /opt/brutal_screwdriver/scripts/dd-wrt/kill_openvpn.sh
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/kill_openvpn.sh
 end
 
 begin
   prog = irexec
-  button = KEY_THREE
+  button = KEY_MODE
   delay = 3
-  config = /opt/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "nl"
-end
-
-begin
-  prog = irexec
-  button = KEY_ONE
-  delay = 3
-  config = /opt/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "ca-toronto"
-end
-
-begin
-  prog = irexec
-  button = KEY_TWO
-  delay = 3
-  config = /opt/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "uk-london"
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/clear_lcd.sh
 end
 
 begin
   prog = irexec
   button = KEY_MUTE
   delay = 3
-  config = /opt/brutal_screwdriver/scripts/dd-wrt/status_openvpn.sh
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/status_openvpn.sh
 end
+
+begin
+  prog = irexec
+  button = KEY_NEXT
+  delay = 3
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/start_openvpn.sh
+end
+
+begin
+  prog = irexec
+  button = KEY_PREVIOUS
+  delay = 3
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/restart_openvpn.sh
+end
+
+begin
+  prog = irexec
+  button = KEY_ONE
+  delay = 3
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "ca-toronto"
+end
+
+begin
+  prog = irexec
+  button = KEY_TWO
+  delay = 3
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "uk-london"
+end
+
+begin
+  prog = irexec
+  button = KEY_THREE
+  delay = 3
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "nl"
+end
+
+begin
+  prog = irexec
+  button = KEY_FOUR
+  delay = 3
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "swiss"
+end
+
+begin
+  prog = irexec
+  button = KEY_FIVE
+  delay = 3
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "sweden"
+end
+
+begin
+  prog = irexec
+  button = KEY_SIX
+  delay = 3
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "france"
+end
+
+begin
+  prog = irexec
+  button = KEY_SEVEN
+  delay = 3
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "germany"
+end
+
+begin
+  prog = irexec
+  button = KEY_EIGHT
+  delay = 3
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "ro"
+end
+
+begin
+  prog = irexec
+  button = KEY_NINE
+  delay = 3
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "hk"
+end
+
+begin
+  prog = irexec
+  button = KEY_ZERO
+  delay = 3
+  config = /etc/init.d/ssh start
+end
+
