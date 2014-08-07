@@ -1,6 +1,6 @@
 #!/bin/bash
 source $(dirname $0)/../../config/wrench.conf
-$(dirname $0)/../lcd/print_message.py "Running Command:" "$1"
+$(dirname $0)/../lcd/print_message_i2c.py "Running Command:" "$1"
 
 if ssh $USER@$HOST "[ ! -f $VPN_PATH/$1.conf ]"
 then
@@ -8,4 +8,4 @@ then
 fi
 
 $SSH -i $SSH_KEY $USER@$HOST "killall openvpn && openvpn --config $VPN_PATH/$1.conf &"
-$(dirname $0)/../lcd/print_message.py "Done Command:" "$1"
+$(dirname $0)/../lcd/print_message_i2c.py "Done Command:" "$1"
