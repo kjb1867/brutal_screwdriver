@@ -8,4 +8,7 @@ then
 fi
 
 $SSH -i $SSH_KEY $USER@$HOST "killall openvpn && openvpn --config $VPN_PATH/$1.conf &"
+
+echo $1 > $(dirname $0)/../../config/current_vpn.txt
+
 $(dirname $0)/../lcd/print_message_i2c.py "Done Command:" "$1"

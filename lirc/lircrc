@@ -86,20 +86,21 @@ begin
   prog = irexec
   button = KEY_EIGHT
   delay = 3
-  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "ro"
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "aus"
 end
 
 begin
   prog = irexec
   button = KEY_NINE
   delay = 3
-  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "hk"
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "ireland"
 end
 
 begin
   prog = irexec
   button = KEY_ZERO
   delay = 3
-  config = /etc/init.d/ssh start
+  config = /home/pi/brutal_screwdriver/scripts/dd-wrt/run_openvpn.sh "mexico"
+
 end
 
